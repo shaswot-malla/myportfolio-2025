@@ -16,23 +16,25 @@ const HeroText = () => {
             variants={variants}
             initial="hidden"
             animate ="visible"
-            transition={{delay:1}} > Greetings! Im Shaswot </motion.h1>
+            transition={{delay:1}} > Greetings! I'm Shaswot </motion.h1>
             <br></br>
             <div className="flex flex-col items-start">
-                <motion.p className="text-3xl font-medium text-neutral-300"
+                <motion.p className="text-3xl font-medium text-neutral-100"
                 variants={variants}
                 initial="hidden"
                 animate ="visible"
                 transition={{delay:1.2}}>An artist and a designer <br/> 
                 who rock n rolls and is dedicated to crafting awesome designs</motion.p>
+                <br></br>
             <motion.div
             variants={variants}
             initial="hidden"
             animate ="visible"
             transition={{delay:1.5}}>
-               <FlipWords words={words} className={"font-black text-white text-8xl"}/>
+               <FlipWords words={words} className={"font-black text-white text-7xl"}/>
             </motion.div>
-            <motion.p className="text-2xl font-medium text-neutral-300" 
+            <br></br>
+            <motion.p className="text-4xl font-medium text-neutral-800" 
             variants={variants}
             initial="hidden"
             animate ="visible"
@@ -61,7 +63,7 @@ const HeroText = () => {
             <FlipWords words={[ "Modern", "Appealing", "Fun", "Scalable"]} className={"font-bold text-white text-7xl"}/>
         </motion.div>
 
-        <motion.p className="text-4xl font-black text-neutral-300"
+        <motion.p className="text-4xl font-black text-neutral-100"
         variants={variants}
         initial="hidden"
         animate ="visible"

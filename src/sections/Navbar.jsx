@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className='flex items-center justify-between py-2 sm:py-0'>
                 <a href="/" className='text-xl font-bold transition-colours
                  text-neutral-400 hover:text-white'>
-                    Shaswot
+                    SM
                     </a>
                 <button onClick={()=>setIsOpen(!isOpen)} className='flex cursor-pointer text-neutral-100 
                 hover:text_white focus:outline-none sm:hidden'>

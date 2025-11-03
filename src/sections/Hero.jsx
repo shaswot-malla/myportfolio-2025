@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { Canvas } from "@react-three/fiber"
 import HeroText from "../components/HeroText"
 import ParallaxBackground from "../components/ParallaxBackground"
 
@@ -10,6 +11,14 @@ const Hero = () => {
 
         <HeroText/>
         <ParallaxBackground/>
+        <figure 
+        className="absolute inset-0" 
+        style={{width: "100vw", height: "100vh"}}
+        >
+          <Canvas>
+            
+          </Canvas>
+        </figure>
         </section>
   )
 }
