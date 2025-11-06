@@ -22,6 +22,7 @@ export function Astronaut(props) {
     }
   }, [actions, animations]);
 
+// Falling Motion Animation
   const yPosition = useMotionValue(5);
   const ySpring = useSpring(yPosition, { damping: 30});
   useEffect(()=>{
@@ -33,7 +34,7 @@ export function Astronaut(props) {
   return (
     <group ref={group} {...props} dispose={null}
     rotation={[-Math.PI / 2, -0.2, 2.2]} 
-    scale={props.scale || 0.3}
+    scale={props.scale || 0.2}  //this is the size of the astronaut in desktop view
     position={props.position || [1.3, -1, 0]}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" 
